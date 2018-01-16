@@ -38,3 +38,6 @@ jspm_packages
 /demo-app/build
 /demo-app/typings
 /typings
+
+# WebStorm
+.idea
