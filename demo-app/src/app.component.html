@@ -5,7 +5,7 @@
                 <label for="firstName" class="col-md-12">First Name</label>
                 <div class="col-md-12">
                     <input formControlName="firstName" type="text" class="form-control" id="firstName">
-                    <ng2-mdf-validation-message [control]="firstName" *ngIf="!firstName.pristine"></ng2-mdf-validation-message>
+                    <ng2-mdf-validation-message [control]="firstName"></ng2-mdf-validation-message>
                     <span class="help-block">Required input with default error message and style.</span>
                 </div>
             </div>
@@ -14,7 +14,7 @@
                 <label for="lastName" class="col-md-12">Last Name</label>
                 <div class="col-md-12">
                     <input formControlName="lastName" type="text" class="form-control" id="lastName">
-                    <ng2-mdf-validation-message [control]="lastName" *ngIf="!lastName.pristine"></ng2-mdf-validation-message>
+                    <ng2-mdf-validation-message [control]="lastName"></ng2-mdf-validation-message>
                     <span class="help-block">Required input with custom error message and default style.</span>
                 </div>
             </div>
@@ -23,7 +23,7 @@
                 <label for="username" class="col-md-12">Username</label>
                 <div class="col-md-12">
                     <input formControlName="username" type="text" class="form-control" id="username">
-                    <ng2-mdf-validation-message [control]="username" *ngIf="!username.pristine" [class]="'text-warning'"></ng2-mdf-validation-message>
+                    <ng2-mdf-validation-message [control]="username" [class]="'text-warning'"></ng2-mdf-validation-message>
                     <span class="help-block">Required input with custom error message, required length and custom style.</span>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                 <label for="age" class="col-md-12">Age</label>
                 <div class="col-md-12">
                     <input formControlName="age" type="number" class="form-control" id="age">
-                    <ng2-mdf-validation-message [control]="age" *ngIf="!age.pristine"></ng2-mdf-validation-message>
+                    <ng2-mdf-validation-message [control]="age"></ng2-mdf-validation-message>
                     <span class="help-block">Number input with minimum value and default error message</span>
                 </div>
             </div>
@@ -43,19 +43,19 @@
                 <label for="email" class="col-md-12">Email</label>
                 <div class="col-md-12">
                     <input formControlName="email" type="email" class="form-control" id="email">
-                    <ng2-mdf-validation-message [control]="email" *ngIf="!email.pristine"></ng2-mdf-validation-message>
+                    <ng2-mdf-validation-message [control]="email"></ng2-mdf-validation-message>
                     <span class="help-block">Required Email input with default settings.</span>
                 </div>
             </div>
 
             <div formGroupName="passwordsGroup">
-                <ng2-mdf-validation-message [control]="passwordsGroup" *ngIf="!password.pristine && !confirmPassword.pristine"></ng2-mdf-validation-message>
+                <ng2-mdf-validation-message [control]="passwordsGroup"></ng2-mdf-validation-message>
 
                 <div class="form-group">
                     <label for="password" class="col-md-12">Password</label>
                     <div class="col-md-12">
                         <input formControlName="password" type="password" class="form-control" id="password">
-                        <ng2-mdf-validation-message [control]="password" *ngIf="!password.pristine"></ng2-mdf-validation-message>
+                        <ng2-mdf-validation-message [control]="password"></ng2-mdf-validation-message>
                     </div>
                 </div>
 
@@ -63,7 +63,7 @@
                     <label for="confirmPassword" class="col-md-12">Confirm Password</label>
                     <div class="col-md-12">
                         <input formControlName="confirmPassword" type="password" class="form-control" id="confirmPassword">
-                        <ng2-mdf-validation-message [control]="confirmPassword" *ngIf="!confirmPassword.pristine"></ng2-mdf-validation-message>
+                        <ng2-mdf-validation-message [control]="confirmPassword"></ng2-mdf-validation-message>
                     </div>
                 </div>
             </div>
